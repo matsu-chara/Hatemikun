@@ -16,6 +16,12 @@
 		AC776C2B19F99C8100E57472 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC776BDC19F99BB600E57472 /* ViewController.swift */; };
 		AC776C2F19F99CC900E57472 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC776C0319F99C0B00E57472 /* Quick.framework */; };
 		AC776C3019F99CCD00E57472 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC776C1219F99C1500E57472 /* Nimble.framework */; };
+		AC776C3B19F99E7F00E57472 /* HatenaBookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC776C3919F99E7F00E57472 /* HatenaBookmark.swift */; };
+		AC776C3C19F99E7F00E57472 /* HatenaBookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC776C3919F99E7F00E57472 /* HatenaBookmark.swift */; };
+		AC776C3D19F99E7F00E57472 /* HatenaEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC776C3A19F99E7F00E57472 /* HatenaEntry.swift */; };
+		AC776C3E19F99E7F00E57472 /* HatenaEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC776C3A19F99E7F00E57472 /* HatenaEntry.swift */; };
+		AC776C4319F99EB900E57472 /* HatenaBookmarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC776C4019F99EB900E57472 /* HatenaBookmarkTests.swift */; };
+		AC776C4519F99EB900E57472 /* HatenaEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC776C4119F99EB900E57472 /* HatenaEntryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +139,10 @@
 		AC776C0A19F99C1500E57472 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
 		AC776C1919F99C2400E57472 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Vendor/Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
 		AC776C2C19F99CB300E57472 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		AC776C3919F99E7F00E57472 /* HatenaBookmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatenaBookmark.swift; sourceTree = "<group>"; };
+		AC776C3A19F99E7F00E57472 /* HatenaEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatenaEntry.swift; sourceTree = "<group>"; };
+		AC776C4019F99EB900E57472 /* HatenaBookmarkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatenaBookmarkTests.swift; sourceTree = "<group>"; };
+		AC776C4119F99EB900E57472 /* HatenaEntryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HatenaEntryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +189,7 @@
 			children = (
 				AC776BDA19F99BB600E57472 /* AppDelegate.swift */,
 				AC776BDC19F99BB600E57472 /* ViewController.swift */,
+				AC776C3F19F99E8500E57472 /* Hatena */,
 				AC776BDE19F99BB600E57472 /* Main.storyboard */,
 				AC776BE119F99BB600E57472 /* Images.xcassets */,
 				AC776BE319F99BB600E57472 /* LaunchScreen.xib */,
@@ -199,6 +210,8 @@
 		AC776BED19F99BB600E57472 /* HatemikunTests */ = {
 			isa = PBXGroup;
 			children = (
+				AC776C4019F99EB900E57472 /* HatenaBookmarkTests.swift */,
+				AC776C4119F99EB900E57472 /* HatenaEntryTests.swift */,
 				AC776C2919F99C6100E57472 /* Vendor */,
 				AC776BEE19F99BB600E57472 /* Supporting Files */,
 			);
@@ -259,6 +272,15 @@
 				AC776BFA19F99C0B00E57472 /* Quick.xcodeproj */,
 			);
 			name = Vendor;
+			sourceTree = "<group>";
+		};
+		AC776C3F19F99E8500E57472 /* Hatena */ = {
+			isa = PBXGroup;
+			children = (
+				AC776C3919F99E7F00E57472 /* HatenaBookmark.swift */,
+				AC776C3A19F99E7F00E57472 /* HatenaEntry.swift */,
+			);
+			name = Hatena;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,6 +475,8 @@
 			files = (
 				AC776BDD19F99BB600E57472 /* ViewController.swift in Sources */,
 				AC776BDB19F99BB600E57472 /* AppDelegate.swift in Sources */,
+				AC776C3B19F99E7F00E57472 /* HatenaBookmark.swift in Sources */,
+				AC776C3D19F99E7F00E57472 /* HatenaEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +486,10 @@
 			files = (
 				AC776C2B19F99C8100E57472 /* ViewController.swift in Sources */,
 				AC776C2A19F99C7E00E57472 /* AppDelegate.swift in Sources */,
+				AC776C3C19F99E7F00E57472 /* HatenaBookmark.swift in Sources */,
+				AC776C4519F99EB900E57472 /* HatenaEntryTests.swift in Sources */,
+				AC776C4319F99EB900E57472 /* HatenaBookmarkTests.swift in Sources */,
+				AC776C3E19F99E7F00E57472 /* HatenaEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

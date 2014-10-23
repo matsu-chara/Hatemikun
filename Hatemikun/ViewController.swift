@@ -7,19 +7,25 @@
 //
 
 import UIKit
+import alamofire
 
 class ViewController: UIViewController {
-
+    var hatena: HatenaEntry! {
+        didSet {
+            //table.reload()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.fetchData()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func fetchData() {
+        Alamofire.request(.GET, "http://b.hatena.ne.jp/entry/jsonlite/?url=http://www.hatena.ne.jp")
+            .responseJSON( {  (request, response, data, error) in
+                self.hatena = HatenaEntry(dict: data! as [String: AnyObject])
+            })
     }
-
-
 }
 
